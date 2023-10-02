@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/pantalla_principal">
+
+    <activity
+        android:id="@+id/pantalla_principal"
+        android:name="com.gruponiche.fit_or_fat.ui.MenuPrincipal"
+        android:label="activity_pantalla_principal"
+        tools:layout="@layout/activity_menu_principal" />
+    <activity
+        android:id="@+id/buscarRutina"
+        android:name="com.gruponiche.fit_or_fat.ui.BuscarRutina"
+        android:label="activity_buscar_rutina"
+        tools:layout="@layout/activity_buscar_rutina" />
+    <activity
+        android:id="@+id/comenzarRutina"
+        android:name="com.gruponiche.fit_or_fat.ui.ComenzarRutina"
+        android:label="ComenzarRutina" />
+    <activity
+        android:id="@+id/perfil"
+        android:name="com.gruponiche.fit_or_fat.ui.RetarAmigo"
+        android:label="activity_retar_amigo"
+        tools:layout="@layout/activity_retar_amigo" />
+</navigation>

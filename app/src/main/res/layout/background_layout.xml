@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/custom_dialog"
+              android:layout_width="300dp"
+                android:padding="5dp"
+
+                android:background="@drawable/background_dialog"
+              android:layout_height="70dp">
+
+    <TextView
+            android:id="@+id/confirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Estás seguro?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+              />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmacion"
+            android:layout_centerHorizontal="true"
+    >
+           <ImageView
+                        android:id="@+id/aceptarGuardar"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:src="@drawable/ic_vector"
+                      android:layout_marginEnd="16dp"
+           />
+
+        <ImageView  android:id="@+id/rechazarGuardar"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/ic_vector__1_"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
+

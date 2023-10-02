@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/flechaAtras"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#2C2C2E"
+        android:scaleType="centerCrop"
+        android:tint="#E5E5E5"
+        app:layout_constraintEnd_toStartOf="@+id/tvNombreRutina"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+    <TextView
+        android:id="@+id/tvNombreRutina"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="160dp"
+        android:text="RUTINA FULL BODY"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/contenedorInformacion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreRutina">
+
+        <ImageView
+            android:id="@+id/ivRutinaEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ejercicio" />
+
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/texto_blanco_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Descripción" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvInfoRutina"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorInformacion" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoRutina" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_color"
+        app:layout_constraintBottom_toTopOf="@+id/btnComenzarRutina"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:layout_editor_absoluteX="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEjercicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnComenzarRutina"
+        style="@style/boton_rutina_verde"
+        android:layout_marginBottom="20dp"
+        android:text="Comenzar rutina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

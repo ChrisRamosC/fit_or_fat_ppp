@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gruponiche.fit_or_fat.ui.VisualizarEstadisticas">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+        android:id="@+id/btnAtrasVisualizarEstadisticas"
+        android:background="#2C2C2E"
+        android:tint="#E5E5E5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintHorizontal_bias="0.509"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/CustomFont"
+        android:layout_width="256dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
+        android:text="ESTADÍSTICAS"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="335dp"
+        android:layout_height="629dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/borde_redondeado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView25"
+            style="@style/texto_blanco_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="26dp"
+            android:text="CANTIDAD DE CALORÍAS QUEMADAS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+            <RadioButton
+                android:id="@+id/btnSemana"
+                android:layout_width="98dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/radio_selector_visualizar_estadisticas"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:text="Semana"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_selector_text_visualizar_estadisticas" />
+
+            <RadioButton
+                android:id="@+id/btnMes"
+                android:layout_width="98dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/radio_selector_visualizar_estadisticas"
+                android:button="@android:color/transparent"
+                android:text="Mes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_selector_text_visualizar_estadisticas" />
+
+            <RadioButton
+                android:id="@+id/btnAnio"
+                android:layout_width="98dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/radio_selector_visualizar_estadisticas"
+                android:button="@android:color/transparent"
+                android:text="Año"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_selector_text_visualizar_estadisticas" />
+        </RadioGroup>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerViewVisualizarEstadisticas"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="333dp"
+            android:layout_height="515dp"
+            android:layout_marginTop="2dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:navGraph="@navigation/navegacion_estadisticas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

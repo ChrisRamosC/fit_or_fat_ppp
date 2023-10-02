@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradiente de color -->
+    <gradient android:startColor="#D0FD3E" android:endColor="#D0FD3E"></gradient>
+    <!-- Tamaño del rectángulo -->
+    <size android:width="100dp" android:height="40dp" ></size>
+    <!-- Esquinas redondeadas -->
+    <corners android:topLeftRadius="10dp" android:topRightRadius="10dp"
+             android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" />
+    <!-- Espaciado -->
+    <padding android:top="10dp" android:bottom="10dp"
+             android:left="10dp" android:right="10dp"
+    />
+
+</shape>

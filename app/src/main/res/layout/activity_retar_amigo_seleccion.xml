@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.gruponiche.fit_or_fat.ui.RetarAmigoSeleccion">
+
+    <Button
+        android:id="@+id/btnFechaHora"
+        style="@style/boton_verde"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Seleccionar fecha y hora"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        style="@style/texto_abel_24_blanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Rutina seleccionada:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flechaAtras4" />
+
+    <TextView
+        android:id="@+id/tvNombreRutina6"
+        style="@style/texto_titulo_blanco_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETAR A UN AMIGO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/flechaAtras4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#2C2C2E"
+        android:scaleType="centerCrop"
+        android:tint="#E5E5E5"
+        app:layout_constraintEnd_toStartOf="@+id/tvNombreRutina6"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+    <TextView
+        android:id="@+id/textView24"
+        style="@style/texto_abel_24_blanco"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Amigo seleccionado:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/borde_redondeado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+        <ImageView
+            android:id="@+id/ivFotoAmigo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/genero_background_selector"
+            android:clipToOutline="true"
+            android:outlineProvider="background"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/gris" />
+
+        <TextView
+            android:id="@+id/tvNombreAmigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoAmigo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.508"
+            tools:text="Buenas"
+            style="@style/texto_sans_semibold_blanco_15"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivRutina"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:alpha="0.5"
+                android:background="@drawable/borde_redondeado"
+                android:clipToOutline="true"
+                android:outlineProvider="background"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@color/gris" />
+
+            <TextView
+                android:id="@+id/tvRutinaNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/white"
+                tools:text="Hola" />
+
+            <TextView
+                android:id="@+id/tvRutinaInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvRutinaNombre"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/verde_fit"
+                tools:text="Buenas" />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

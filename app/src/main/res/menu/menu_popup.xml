@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_todo"
+        android:title="De todo tipo" />
+    <item
+        android:id="@+id/item_entrenamiento_fuerza"
+        android:title="Entrenamiento de fuerza"
+        />
+    <item
+        android:id="@+id/item_cardio"
+        android:title="Cardio" />
+    <item
+        android:id="@+id/item_flexibilidad"
+        android:title="Flexibilidad" />
+    <item
+        android:id="@+id/item_entrenamiento_resistencia"
+        android:title="Entrenamiento de resistencia" />
+    <item
+        android:id="@+id/item_acondicionamiento_fisico"
+        android:title="Acondicionamiento físico" />
+    <item
+        android:id="@+id/item_tren_superior"
+        android:title="Tren superior" />
+    <item
+        android:id="@+id/item_tren_inferior"
+        android:title="Tren inferior" />
+    <item
+        android:id="@+id/item_full_body"
+        android:title="Full body" />
+
+</menu>

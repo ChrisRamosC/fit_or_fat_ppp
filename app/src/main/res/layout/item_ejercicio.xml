@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/borde_redondeado">
+
+
+
+    <ImageView
+        android:id="@+id/ivEjercicio"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/borde_redondeado"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/gris" />
+
+    <TextView
+        android:id="@+id/tvEjercicioCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/ivEjercicio"
+        app:layout_constraintTop_toBottomOf="@+id/tvEjercicioNombre"
+        tools:text="Hola" />
+
+    <TextView
+        android:id="@+id/tvEjercicioNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEjercicioCantidad"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/verde_fit"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivEjercicio"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Buenas" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btnInfo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="#2C2C2E"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/ic_baseline_info_24" />
+
+
+    <!--    android:layout_marginLeft="10dp"-->
+    <!--    android:layout_marginTop="10dp"-->
+    <!--    android:layout_marginRight="10dp"-->
+    <!--    android:layout_marginBottom="10dp"-->
+    <!--    android:orientation="horizontal">-->
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        android:layout_marginBottom="5dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/imgEjercicio"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="131dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                app:srcCompat="@drawable/ejercicio" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_marginLeft="5dp"-->
+    <!--                android:layout_marginRight="5dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textNombreRutina"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:paddingTop="10dp"-->
+    <!--                    android:paddingBottom="10dp"-->
+    <!--                    android:text="TextView"-->
+    <!--                    android:textSize="20sp" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/textInfoRutina"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="TextView" />-->
+    <!--            </LinearLayout>-->
+    <!--        </LinearLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

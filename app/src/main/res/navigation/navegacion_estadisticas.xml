@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion_estadisticas"
+    app:startDestination="@id/estadisticasSemanaFragment">
+
+    <fragment
+        android:id="@+id/estadisticasSemanaFragment"
+        android:name="com.gruponiche.fit_or_fat.ui.EstadisticasSemanaFragment"
+        android:label="fragment_estadisticas_semana"
+        tools:layout="@layout/fragment_estadisticas_semana" />
+    <fragment
+        android:id="@+id/estadisticasMesesFragment"
+        android:name="com.gruponiche.fit_or_fat.ui.EstadisticasMesesFragment"
+        android:label="fragment_estadisticas_meses"
+        tools:layout="@layout/fragment_estadisticas_meses" />
+    <fragment
+        android:id="@+id/estadisticasAniosFragment"
+        android:name="com.gruponiche.fit_or_fat.ui.EstadisticasAniosFragment"
+        android:label="fragment_estadisticas_anios"
+        tools:layout="@layout/fragment_estadisticas_anios" />
+</navigation>

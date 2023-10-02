@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Fit or Fat</string>
+    <string name="toggle_hombre">Hombre</string>
+    <string name="toggle_mujer">Mujer</string>
+    <string name="telefono">Teléfono</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="correo">Correo</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="confirma_tu_contrasena">Confirma tu contraseña</string>
+    <string name="busqueda_de_rutinas">Búsqueda de rutinas</string>
+    <string name="ingrese_palabras_clave">Ingrese palabras clave...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_comenzar_rutina_ejercicio_descanso">
+        comenzar_rutina_ejercicio_descanso
+    </string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="estatura_cm">160</string>
+    <string name="peso_kg">74</string>
+</resources>

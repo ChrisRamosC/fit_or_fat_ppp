@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivGrupoMuscular"
+        android:layout_width="180dp"
+        android:layout_height="205dp"
+        tools:background="@drawable/boton_gris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:background="@drawable/borde_redondeado"
+        />
+
+    <TextView
+        android:id="@+id/tvGrupoMuscular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/texto_blanco_16"
+        tools:text="Hola"
+        app:layout_constraintStart_toStartOf="@id/vectorcitoVerdecito"
+        app:layout_constraintTop_toTopOf="@id/ivGrupoMuscular" />
+
+    <ImageView
+        android:id="@+id/vectorcitoVerdecito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/vectorcito"
+        app:layout_constraintStart_toStartOf="@id/ivGrupoMuscular"
+        app:layout_constraintTop_toTopOf="@id/ivGrupoMuscular" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

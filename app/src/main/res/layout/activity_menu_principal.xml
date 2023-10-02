@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+
+    <TextView
+        android:id="@+id/hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:baselineAligned="false"
+        android:gravity="top"
+        android:lineSpacingExtra="2sp"
+        android:text="Hola, "
+        android:textAppearance="@style/CustomFont"
+        android:textColor="#FFFFFFFF"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvnombre_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:baselineAligned="false"
+        android:gravity="top"
+        android:lineSpacingExtra="2sp"
+        android:text="sdadsadsaads"
+        android:textAppearance="@style/CustomFont"
+        android:textColor="#D0FD3E"
+        android:textSize="32dp"
+        app:layout_constraintStart_toEndOf="@+id/hola"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerViewMenuPrincipal"
+        android:name="com.gruponiche.fit_or_fat.ui.InicioFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvnombre_usuario"
+        app:navGraph="@navigation/navegacion_menu_inferior" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        style="@style/barra_navegacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navegacion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

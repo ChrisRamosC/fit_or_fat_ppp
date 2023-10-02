@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.gruponiche.fit_or_fat.util.FitOrFatApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/CustomTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.PagoCompletado"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.PagoPaypal"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.RetarAmigoSolicitud"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.RetarAmigoSeleccion"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.RetarAmigoCalendario"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.RetarAmigoBuscar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.ConviertetePremium"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.VisualizarConfigUsuario"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.RetarAmigo"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.GraficaReportes"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.Iniciar_sesion"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.PerfilUsuario"
+            android:exported="true" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.Metricas"
+            android:exported="true" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.Nivel"
+            android:exported="true" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.Objetivo"
+            android:exported="true" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.BuscarRutina"
+            android:exported="true" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.MenuPrincipal"
+            android:exported="true" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.VisualizarProgreso"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.VisualizarEstadisticas"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.VisualizarIndicadoresSalud"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.ComenzarRutina"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.ComenzarRutina2"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.ComenzarRutinaDescanso"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.RutinaFinalizada"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.Crear_cuenta"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.ZonaObjetivoHombre"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.ZonaObjetivoMujer"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.DatosPersonales"
+            android:exported="false" />
+        <activity
+            android:name="com.gruponiche.fit_or_fat.ui.Terminos"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

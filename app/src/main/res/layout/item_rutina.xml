@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivRutina"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:alpha="0.5"
+            android:background="@drawable/borde_redondeado"
+            android:clipToOutline="true"
+            android:outlineProvider="background"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/gris" />
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvRutinaNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text = "Hola" />
+
+        <TextView
+            android:layout_below="@id/tvRutinaNombre"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvRutinaInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fit"
+            tools:text="Buenas" />
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
