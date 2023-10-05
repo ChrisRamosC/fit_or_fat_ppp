@@ -1,5 +1,6 @@
 package com.gruponiche.fit_or_fat.adapter
 
+import android.annotation.SuppressLint
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -11,6 +12,7 @@ class RutinaViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     val binding = ItemRutinaBinding.bind(view)
 
+    @SuppressLint("SetTextI18n")
     fun render(rutinaModel: RutinaResponse, onClickListener: (RutinaResponse) -> Unit) {
         binding.tvRutinaNombre.text = rutinaModel.nombreRutina.replaceFirstChar {
             if (it.isLowerCase()) it.titlecase(
@@ -31,7 +33,4 @@ class RutinaViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             onClickListener(rutinaModel)
         }
     }
-
-
-
 }

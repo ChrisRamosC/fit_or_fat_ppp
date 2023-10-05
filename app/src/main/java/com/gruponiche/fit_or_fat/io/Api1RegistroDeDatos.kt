@@ -14,6 +14,7 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -28,8 +29,8 @@ interface Api1RegistroDeDatos {
     @POST("/ux-registrar-datos/fitorfat/servicio-al-cliente/v1/usuario/registrar-usuarios")
     fun postCreateUsuario(
         @Body usuario: Usuario,
-
         ): Call<CreateResponse>
+
     @POST("/ux-registrar-datos/fitorfat/servicio-al-cliente/v1/usuario/solicitar-codigo-recuperacion")
     fun postEnviarCorreo(
         @Query(value = "correo") correo: String,
@@ -48,10 +49,7 @@ interface Api1RegistroDeDatos {
     @POST("/ux-registrar-datos/fitorfat/servicio-al-cliente/v1/detalles-usuario/registrar-detalles-usuarios/{id}")
     fun postRegistrarDatos(
         @Path("id") id: Int, @Body datosUsuario: DatosUsuario,
-
         ): Call<RegistrarDatosResponse>
-
-
 
     companion object Factory{
         private const val BASE_URL="http://10.0.2.2:8080/"

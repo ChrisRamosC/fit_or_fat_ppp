@@ -105,6 +105,7 @@ class Iniciar_sesion : AppCompatActivity() {
         call.enqueue(object : Callback<LoginResponse> {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                 Log.d("prueba", response.body().toString())
+
                 if (response.isSuccessful) {
                     val loginResponse = response.body()
                     if (loginResponse == null) {
@@ -168,6 +169,7 @@ class Iniciar_sesion : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                goToPantallaPrincipal()
                 Toast.makeText(applicationContext, "Se produjo un error", Toast.LENGTH_SHORT).show()
             }
 

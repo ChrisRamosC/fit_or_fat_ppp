@@ -6,6 +6,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -159,11 +160,13 @@ class Objetivo : AppCompatActivity() {
                         gson.fromJson(response.errorBody()!!.charStream(), RegistrarDatosResponse::class.java)
                     val mensaje = message?.mensaje ?: "Error desconocido"
                     Toast.makeText(applicationContext,mensaje, Toast.LENGTH_SHORT).show()
+                    Log.d("ErrorButton",mensaje)
                 }
             }
 
             override fun onFailure(call: Call<RegistrarDatosResponse>, t: Throwable) {
                 Toast.makeText(applicationContext,t.message,Toast.LENGTH_SHORT).show()
+                Log.d("ErrorButton",t.message.toString())
             }
 
         })
